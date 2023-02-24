@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-author-column
+      author: Abdumalik
+      changes:
+        - addColumn:
+           # schemaName: test_liquibase
+            tableName: author
+            columns:
+              - column:
+                  type: int
+                  name: age
+                  defaultValue: "0"

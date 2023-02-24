@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: change-author-column
+      author: Abdumalik
+      changes:
+        - renameColumn:
+            tableName: author
+            #schemaName: test_liquibase
+            newColumnName: full_name
+            oldColumnName: name
+            columnDataType: varchar(200)
